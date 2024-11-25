@@ -1,7 +1,4 @@
 #include <stdio.h>
-float tinhTienDien(float chisoCu, float chisoMoi) {
-    float soDien = chisoMoi - chisoCu;
-
 int main() {
     float chisoCu, chisoMoi; 
     
@@ -12,12 +9,6 @@ int main() {
     printf("Nhap chi so cong to dien cuoi thang: ");
     scanf("%f", &chisoMoi);
 	float soDien = chisoMoi - chisoCu;
-
-    if (soDien < 0) {
-    printf("Chi so moi khong duoc nho hon chi so cu.\n");
-   return -1;  
-    }
-
     float tienDien = 0;
     
     if (soDien <= 50) {
