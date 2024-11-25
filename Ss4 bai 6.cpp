@@ -2,24 +2,6 @@
 float tinhTienDien(float chisoCu, float chisoMoi) {
     float soDien = chisoMoi - chisoCu;
 
-    if (soDien < 0) {
-        printf("Ch? s? m?i không du?c nh? hon ch? s? cu.\n");
-        return -1;  
-    }
-
-    float tienDien = 0;
-    
-    if (soDien <= 50) {
-        tienDien = soDien * 1500;
-    } else if (soDien <= 100) {
-        tienDien = 50 * 1500 + (soDien - 50) * 2000;
-    } else {
-        tienDien = 50 * 1500 + 50 * 2000 + (soDien - 100) * 2500;
-    }
-
-    return tienDien;
-}
-
 int main() {
     float chisoCu, chisoMoi; 
     
